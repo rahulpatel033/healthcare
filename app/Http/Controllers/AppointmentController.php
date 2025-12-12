@@ -20,7 +20,7 @@ class AppointmentController {
      *
      * @group Appointment
      * 
-     * @header Authorization string required Bearer token for authentication.
+     * @header Authorization Bearer {token}
      * 
      * @bodyParam doctorId integer required Doctor ID.
      * @bodyParam startTime string required Start Time. Example: 2025-12-11 10:00:00
@@ -45,6 +45,8 @@ class AppointmentController {
      *
      * @group Appointment
      * 
+     * @header Authorization Bearer {token}
+     * 
      * @bodyParam id integer required Appointment ID.
      *
      */
@@ -60,6 +62,8 @@ class AppointmentController {
      * A valid doctor, from, and to time must be provided.
      *
      * @group Appointment
+     * 
+     * @header Authorization Bearer {token}
      * 
      * @bodyParam id integer required Appointment ID.
      *

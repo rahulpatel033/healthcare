@@ -15,7 +15,7 @@ class DoctorController extends Controller
      *
      * @group Doctor
      * 
-     * @header Authorization string required Bearer token for authentication.
+     * @header Authorization Bearer {token}
      *
      */
     public function index()
