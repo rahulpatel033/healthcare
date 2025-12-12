@@ -64,8 +64,8 @@ class AuthController extends Controller
      *
      * @group Authentication
      * 
-     * @bodyParam email string required The user's email address. Must be unique. Example: rahul@example.com
-     * @bodyParam password string required Minimum 6 characters. Example: secret123
+     * @bodyParam email string required The user's email address. Must be unique. Example: test@example.com
+     * @bodyParam password string required Minimum 6 characters. Example: password
      *
      * @response 200 scenario="Success" {
      *   "user": {
