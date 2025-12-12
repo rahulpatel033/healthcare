@@ -62,7 +62,7 @@ endpoints:
   -
     custom: []
     httpMethods:
-      - DELETE
+      - POST
     uri: 'api/appointments/{id}'
     metadata:
       custom: []

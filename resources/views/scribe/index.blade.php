@@ -74,8 +74,8 @@
                                                     <li class="tocify-item level-2" data-unique="appointment-POSTapi-appointments">
                                 <a href="#appointment-POSTapi-appointments">Book an appointment</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="appointment-DELETEapi-appointments--id-">
-                                <a href="#appointment-DELETEapi-appointments--id-">Cancel an appointment</a>
+                                                                                <li class="tocify-item level-2" data-unique="appointment-POSTapi-appointments--id-">
+                                <a href="#appointment-POSTapi-appointments--id-">Cancel an appointment</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="appointment-POSTapi-appointments--id--complete">
                                 <a href="#appointment-POSTapi-appointments--id--complete">Complete an appointment</a>
@@ -95,13 +95,13 @@
                             </li>
                                                                         </ul>
                             </ul>
-                    <ul id="tocify-header-endpoints" class="tocify-header">
-                <li class="tocify-item level-1" data-unique="endpoints">
-                    <a href="#endpoints">Endpoints</a>
+                    <ul id="tocify-header-doctor" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="doctor">
+                    <a href="#doctor">Doctor</a>
                 </li>
-                                    <ul id="tocify-subheader-endpoints" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-doctors">
-                                <a href="#endpoints-GETapi-doctors">GET api/doctors</a>
+                                    <ul id="tocify-subheader-doctor" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="doctor-GETapi-doctors">
+                                <a href="#doctor-GETapi-doctors">List of Doctors</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -114,7 +114,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: December 11, 2025</li>
+        <li>Last updated: December 12, 2025</li>
     </ul>
 </div>
 
@@ -298,7 +298,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="appointment-DELETEapi-appointments--id-">Cancel an appointment</h2>
+                    <h2 id="appointment-POSTapi-appointments--id-">Cancel an appointment</h2>
 
 <p>
 </p>
@@ -306,12 +306,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>This endpoint allows a new user to book an appointment.
 A valid doctor, from, and to time must be provided.</p>
 
-<span id="example-requests-DELETEapi-appointments--id-">
+<span id="example-requests-POSTapi-appointments--id-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
+    <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/appointments/consequatur" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
@@ -336,59 +336,59 @@ let body = {
 };
 
 fetch(url, {
-    method: "DELETE",
+    method: "POST",
     headers,
     body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
 
-<span id="example-responses-DELETEapi-appointments--id-">
+<span id="example-responses-POSTapi-appointments--id-">
 </span>
-<span id="execution-results-DELETEapi-appointments--id-" hidden>
+<span id="execution-results-POSTapi-appointments--id-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-appointments--id-"></span>:
+                id="execution-response-status-POSTapi-appointments--id-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-appointments--id-"
+    <pre class="json"><code id="execution-response-content-POSTapi-appointments--id-"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-DELETEapi-appointments--id-" hidden>
+<span id="execution-error-POSTapi-appointments--id-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-appointments--id-">
+    <pre><code id="execution-error-message-POSTapi-appointments--id-">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-DELETEapi-appointments--id-" data-method="DELETE"
+<form id="form-POSTapi-appointments--id-" data-method="POST"
       data-path="api/appointments/{id}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-appointments--id-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-appointments--id-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-appointments--id-"
-                    onclick="tryItOut('DELETEapi-appointments--id-');">Try it out ⚡
+                    id="btn-tryout-POSTapi-appointments--id-"
+                    onclick="tryItOut('POSTapi-appointments--id-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-appointments--id-"
-                    onclick="cancelTryOut('DELETEapi-appointments--id-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-POSTapi-appointments--id-"
+                    onclick="cancelTryOut('POSTapi-appointments--id-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-appointments--id-"
+                    id="btn-executetryout-POSTapi-appointments--id-"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
             </button>
             </h3>
             <p>
-            <small class="badge badge-red">DELETE</small>
+            <small class="badge badge-black">POST</small>
             <b><code>api/appointments/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
@@ -398,7 +398,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-appointments--id-"
+                              name="Content-Type"                data-endpoint="POSTapi-appointments--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -410,7 +410,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-appointments--id-"
+                              name="Accept"                data-endpoint="POSTapi-appointments--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -423,7 +423,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="id"                data-endpoint="DELETEapi-appointments--id-"
+                              name="id"                data-endpoint="POSTapi-appointments--id-"
                value="consequatur"
                data-component="url">
     <br>
@@ -436,7 +436,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="DELETEapi-appointments--id-"
+               step="any"               name="id"                data-endpoint="POSTapi-appointments--id-"
                value="17"
                data-component="body">
     <br>
@@ -962,16 +962,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                <h1 id="endpoints">Endpoints</h1>
+                <h1 id="doctor">Doctor</h1>
 
     
 
-                                <h2 id="endpoints-GETapi-doctors">GET api/doctors</h2>
+                                <h2 id="doctor-GETapi-doctors">List of Doctors</h2>
 
 <p>
 </p>
 
-
+<p>This endpoint allows a  user to get list of doctors.</p>
 
 <span id="example-requests-GETapi-doctors">
 <blockquote>Example request:</blockquote>
@@ -980,6 +980,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/doctors" \
+    --header "Authorization: string required Bearer token for authentication." \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -990,6 +991,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
+    "Authorization": "string required Bearer token for authentication.",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1066,6 +1068,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/doctors</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization"                data-endpoint="GETapi-doctors"
+               value="string required Bearer token for authentication."
+               data-component="header">
+    <br>
+<p>Example: <code>string required Bearer token for authentication.</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
