@@ -44,3 +44,30 @@ This seeds the initial data required for the application.
 Once the containers are running, access the API documentation here:
 
 👉 **http://localhost/docs**
+
+
+## 5. Thisgs should be added in future in this project
+
+Redis
+For caching to improve system speed and scalability.
+
+Memcached
+Ultra-fast in-memory cache for simple, short-lived key–value data. Its fater then redis but can store only string so use it when we have simple things to store
+
+Kafka
+Distributed event streaming platform for async processing, background jobs.
+
+Grafana Loki
+Centralized log aggregation solution.
+
+Prometheus
+Metrics collection and monitoring system for performance benchmarking and alerting.
+
+OpenTelemetry
+Distributed tracing for end-to-end visibility across services and debugging latency issues.
+
+Microservices Architecture
+Split high-traffic modules into independent services to improve performance.
+
+Kubernetes (K8s)
+Modern orchestration platform ideal for deploying, scaling, and managing containerized microservices in production.
