@@ -152,7 +152,7 @@ A valid doctor, from, and to time must be provided.</p>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/appointments" \
-    --header "Authorization: string required Bearer token for authentication." \
+    --header "Authorization: Bearer {token}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -168,7 +168,7 @@ A valid doctor, from, and to time must be provided.</p>
 );
 
 const headers = {
-    "Authorization": "string required Bearer token for authentication.",
+    "Authorization": "Bearer {token}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -242,10 +242,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization"                data-endpoint="POSTapi-appointments"
-               value="string required Bearer token for authentication."
+               value="Bearer {token}"
                data-component="header">
     <br>
-<p>Example: <code>string required Bearer token for authentication.</code></p>
+<p>Example: <code>Bearer {token}</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
@@ -313,6 +313,7 @@ A valid doctor, from, and to time must be provided.</p>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/appointments/consequatur" \
+    --header "Authorization: Bearer {token}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -327,6 +328,7 @@ A valid doctor, from, and to time must be provided.</p>
 );
 
 const headers = {
+    "Authorization": "Bearer {token}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -392,6 +394,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/appointments/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization"                data-endpoint="POSTapi-appointments--id-"
+               value="Bearer {token}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {token}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -459,6 +473,7 @@ A valid doctor, from, and to time must be provided.</p>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
     "http://localhost/api/appointments/consequatur/complete" \
+    --header "Authorization: Bearer {token}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
@@ -473,6 +488,7 @@ A valid doctor, from, and to time must be provided.</p>
 );
 
 const headers = {
+    "Authorization": "Bearer {token}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -538,6 +554,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <b><code>api/appointments/{id}/complete</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization"                data-endpoint="POSTapi-appointments--id--complete"
+               value="Bearer {token}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {token}</code></p>
+            </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
 &nbsp;
@@ -803,8 +831,8 @@ A valid email, and password must be provided.</p>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"rahul@example.com\",
-    \"password\": \"secret123\"
+    \"email\": \"test@example.com\",
+    \"password\": \"password\"
 }"
 </code></pre></div>
 
@@ -820,8 +848,8 @@ const headers = {
 };
 
 let body = {
-    "email": "rahul@example.com",
-    "password": "secret123"
+    "email": "test@example.com",
+    "password": "password"
 };
 
 fetch(url, {
@@ -943,10 +971,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-login"
-               value="rahul@example.com"
+               value="test@example.com"
                data-component="body">
     <br>
-<p>The user's email address. Must be unique. Example: <code>rahul@example.com</code></p>
+<p>The user's email address. Must be unique. Example: <code>test@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -955,10 +983,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-login"
-               value="secret123"
+               value="password"
                data-component="body">
     <br>
-<p>Minimum 6 characters. Example: <code>secret123</code></p>
+<p>Minimum 6 characters. Example: <code>password</code></p>
         </div>
         </form>
 
@@ -980,7 +1008,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
     --get "http://localhost/api/doctors" \
-    --header "Authorization: string required Bearer token for authentication." \
+    --header "Authorization: Bearer {token}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -991,7 +1019,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const headers = {
-    "Authorization": "string required Bearer token for authentication.",
+    "Authorization": "Bearer {token}",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -1075,10 +1103,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="Authorization"                data-endpoint="GETapi-doctors"
-               value="string required Bearer token for authentication."
+               value="Bearer {token}"
                data-component="header">
     <br>
-<p>Example: <code>string required Bearer token for authentication.</code></p>
+<p>Example: <code>Bearer {token}</code></p>
             </div>
                                 <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;

@@ -130,7 +130,7 @@ endpoints:
         name: email
         description: "The user's email address. Must be unique."
         required: true
-        example: rahul@example.com
+        example: test@example.com
         type: string
         enumValues: []
         exampleWasSpecified: true
@@ -141,15 +141,15 @@ endpoints:
         name: password
         description: 'Minimum 6 characters.'
         required: true
-        example: secret123
+        example: password
         type: string
         enumValues: []
         exampleWasSpecified: true
         nullable: false
         deprecated: false
     cleanBodyParameters:
-      email: rahul@example.com
-      password: secret123
+      email: test@example.com
+      password: password
     fileParameters: []
     responses:
       -

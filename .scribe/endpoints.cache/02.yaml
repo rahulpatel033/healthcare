@@ -21,7 +21,7 @@ endpoints:
       authenticated: false
       deprecated: false
     headers:
-      Authorization: 'string required Bearer token for authentication.'
+      Authorization: 'Bearer {token}'
       Content-Type: application/json
       Accept: application/json
     urlParameters: []
@@ -79,6 +79,7 @@ endpoints:
       authenticated: false
       deprecated: false
     headers:
+      Authorization: 'Bearer {token}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
@@ -136,6 +137,7 @@ endpoints:
       authenticated: false
       deprecated: false
     headers:
+      Authorization: 'Bearer {token}'
       Content-Type: application/json
       Accept: application/json
     urlParameters:
