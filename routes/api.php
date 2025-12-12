@@ -11,7 +11,9 @@ Route::post('/login',    [AuthController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
 
     // Doctors
-    Route::get('/doctors', [DoctorController::class, 'index']);
+    Route::middleware('throttle:30,1')->group(function () {
+        Route::get('/doctors', [DoctorController::class, 'index']);
+    });
 
     // Appointments
     Route::post('/appointments', [AppointmentController::class, 'book']);
