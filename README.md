@@ -48,26 +48,26 @@ Once the containers are running, access the API documentation here:
 
 ## 5. Thisgs should be added in future in this project
 
-Redis
-For caching to improve system speed and scalability.
+####  Redis
+ - For caching to improve system speed and scalability.
 
-Memcached
-Ultra-fast in-memory cache for simple, short-lived key–value data. Its fater then redis but can store only string so use it when we have simple things to store
+#### Memcached
+ - Ultra-fast in-memory cache for simple, short-lived key–value data. Its fater then redis but can store only string so use it when we have simple things to store
 
-Kafka or Laravel Horizon
-Distributed event streaming platform for async processing, background jobs.
+#### Kafka or Laravel Horizon
+ - Distributed event streaming platform for async processing, background jobs.
 
-Grafana Loki
-Centralized log aggregation solution.
+#### Grafana Loki
+ - Centralized log aggregation solution.
 
-Prometheus
-Metrics collection and monitoring system for performance benchmarking and alerting.
+#### Prometheus
+ - Metrics collection and monitoring system for performance benchmarking and alerting.
 
-OpenTelemetry
-Distributed tracing for end-to-end visibility across services and debugging latency issues.
+#### OpenTelemetry
+ - Distributed tracing for end-to-end visibility across services and debugging latency issues.
 
-Microservices Architecture
-Split high-traffic modules into independent services to improve performance.
+#### Microservices Architecture
+ - Split high-traffic modules into independent services to improve performance.
 
-Kubernetes (K8s)
-Modern orchestration platform ideal for deploying, scaling, and managing containerized microservices in production.
+#### Kubernetes (K8s)
+ - Modern orchestration platform ideal for deploying, scaling, and managing containerized microservices in production.
