@@ -54,7 +54,7 @@ For caching to improve system speed and scalability.
 Memcached
 Ultra-fast in-memory cache for simple, short-lived key–value data. Its fater then redis but can store only string so use it when we have simple things to store
 
-Kafka
+Kafka or Laravel Horizon
 Distributed event streaming platform for async processing, background jobs.
 
 Grafana Loki
